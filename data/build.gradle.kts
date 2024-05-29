@@ -3,6 +3,7 @@ plugins {
     id ("kotlin-android")
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -63,6 +64,7 @@ dependencies {
 
     // coroutines
     implementation (Coroutines.COROUTINES)
+    implementation (Coroutines.COROUTINES_PLAY_SERVICES)
 
     // dagger hilt
     implementation (DaggerHilt.DAGGER_HILT)
